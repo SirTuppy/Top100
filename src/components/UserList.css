@@ -1,0 +1,70 @@
+.user-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #3a3a3a;
+  color: #fff;
+}
+
+.search-results {
+  margin-bottom: 30px;
+}
+
+.search-result-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #2a2a2a;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-boulder-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #2a2a2a;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4a4a4a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5a5a5a;
+}
+
+.remove-button {
+  background-color: #8b0000;
+}
+
+.remove-button:hover {
+  background-color: #a00000;
+}

@@ -1,0 +1,107 @@
+body.dark-mode {
+    background-image: url('https://www.desnivel.com/images/2015/01/woods-process_davidcliffordphotography7.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    color: #ffffff;
+}
+
+.dark-mode .auth-form {
+  background-color: #2c2c2c;
+}
+
+.dark-mode input {
+  background-color: #3a3a3a;
+  color: #ffffff;
+}
+
+.dark-mode .toggle-password {
+  color: #ffffff;
+}
+
+.dark-mode .auth-button {
+  background-color: #4CAF50;
+}
+
+.dark-mode .auth-button:hover {
+  background-color: #45a049;
+}
+
+/* Boulder panel styles for dark mode */
+.dark-mode .boulder-container {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.315); /* Reduced white glow */
+}
+
+.dark-mode .boulder {
+  background-color: #3a3a3a;
+}
+
+.dark-mode .boulder-details {
+  background-color: #2c2c2c;
+}
+
+/* Adjust boulder grade text color in dark mode */
+.dark-mode .grade {
+  color: rgb(0, 0, 0) !important; /* Use !important to override any existing styles */
+}
+
+/* If you have specific grade classes, you may need to adjust them as well */
+.dark-mode .grade-v11 { border-left-color: #8BC34A; }
+.dark-mode .grade-v12 { border-left-color: #CDDC39; }
+.dark-mode .grade-v13 { border-left-color: #FFEB3B; }
+.dark-mode .grade-v14 { border-left-color: #FFC107; }
+.dark-mode .grade-v15 { border-left-color: #E64A19; }
+.dark-mode .grade-v16 { border-left-color: #B71C1C; }
+.dark-mode .grade-v17 { border-left-color: #B71C1C; }
+
+.dark-mode .grade-v11 .grade { background-color: #8BC34A; }
+.dark-mode .grade-v12 .grade { background-color: #CDDC39; }
+.dark-mode .grade-v13 .grade { background-color: #FFEB3B; }
+.dark-mode .grade-v14 .grade { background-color: #FFC107; }
+.dark-mode .grade-v15 .grade { background-color: #E64A19; }
+.dark-mode .grade-v16 .grade { background-color: #B71C1C; }
+.dark-mode .grade-v17 .grade { background-color: #B71C1C; }
+
+
+
+/* You might want to adjust other text colors in the boulder component for dark mode */
+.dark-mode .boulder-container {
+  color: white;
+}
+
+.dark-mode .boulder {
+  background-color: #2c2c2c; /* Darker background for the boulder item */
+}
+
+.dark-mode .name,
+.dark-mode .location {
+  color: #f0f0f0; /* Light grey color for better readability */
+}
+
+.dark-mode .grade {
+  color: #b3b3b3;
+}
+
+.dark-mode .location {
+  color: #b3b3b3;
+}
+
+/* Change "Number of Boulders" text color in dark mode */
+.dark-mode .boulder-count {
+    color: #ffffff;
+}
+
+/* Adjust other boulder-related elements as needed */
+
+/* ... existing dark mode styles ... */
+
+.dark-mode .main-list-container {
+  background-color: rgba(40, 40, 40, 0.8);
+}
+
+.dark-mode .main-list-title {
+  color: #f0f0f0;
+}

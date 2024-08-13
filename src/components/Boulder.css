@@ -1,0 +1,98 @@
+.boulder-container {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #d1d1d1, -5px -5px 15px #ffffff;
+  margin: 0 0 15px 0;
+  transition: all 0.3s ease;
+  border-left: 5px solid #4CAF50; /* Default green for V10 and below */
+  width: 100%;
+}
+
+/* Apply rotation only when not expanded and on hover */
+.boulder-container:not(.expanded):hover {
+  transform: rotate(var(--random-rotation, 0deg)) scale(1.02);
+}
+
+/* Remove any transform when expanded */
+.boulder-container.expanded {
+  transform: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Ensure no transform on hover when expanded */
+.boulder-container.expanded:hover {
+  transform: none;
+}
+
+.boulder {
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e9ecef;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.rank {
+  font-weight: bold;
+  font-size: 1.2em;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.name {
+  font-weight: bold;
+  margin-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.grade {
+  font-weight: bold;
+  padding: 2px 5px;
+  border-radius: 6px;
+  color: black;
+  background-color: #4CAF50; /* Default green for V10 and below */
+  flex-shrink: 0;
+}
+
+.location {
+  font-style: italic;
+  margin-left: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.boulder-details {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+}
+
+/* Gradual color transition for grades */
+.grade-v11 { border-left-color: #8BC34A; }
+.grade-v12 { border-left-color: #CDDC39; }
+.grade-v13 { border-left-color: #FFEB3B; }
+.grade-v14 { border-left-color: #FFC107; }
+.grade-v15 { border-left-color: #E64A19; }
+.grade-v16 { border-left-color: #B71C1C; }
+.grade-v17 { border-left-color: #B71C1C; }
+
+.grade-v11 .grade { background-color: #8BC34A; }
+.grade-v12 .grade { background-color: #CDDC39; }
+.grade-v13 .grade { background-color: #FFEB3B; }
+.grade-v14 .grade { background-color: #FFC107; }
+.grade-v15 .grade { background-color: #E64A19; }
+.grade-v16 .grade { background-color: #B71C1C; }
+.grade-v17 .grade { background-color: #B71C1C; }
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .boulder-container.expanded {
+    max-width: 90%;
+  }
+}
