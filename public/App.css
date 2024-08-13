@@ -1,0 +1,270 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+  background-image: url('https://cdn.climbing.com/wp-content/uploads/2022/03/Daniel_Woods-The_Process-4163.jpg') !important;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body.light-mode {
+  background-image: url('https://cdn.climbing.com/wp-content/uploads/2022/03/Daniel_Woods-The_Process-4163.jpg') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.content-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fancy-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 80%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fancy-title:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.fancy-title {
+  background: linear-gradient(45deg, #fd3d3d, #3a10f1);
+  background-size: 200% 200%;
+  animation: gradientBG 5s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.boulder-count {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.boulder-container {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #d1d1d1, -5px -5px 15px #ffffff;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.boulder-container:hover {
+  transform: rotate(1deg) scale(1.02);
+}
+
+.boulder {
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.rank {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.name {
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.grade {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.location {
+  font-style: italic;
+  margin-right: 10px;
+}
+
+.boulder-details {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+}
+
+/* Difficulty-based colors */
+.moderate {
+  border-left: 5px solid #4CAF50;
+}
+
+.hard {
+  border-left: 5px solid #FFC107;
+}
+
+.very-hard {
+  border-left: 5px solid #FF5722;
+}
+
+.extreme {
+  border-left: 5px solid #F44336;
+}
+
+.search-bar {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.main-nav {
+  background-color: rgba(240, 240, 240, 0.9);
+  padding: 10px 0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.main-nav li {
+  display: inline;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #45a049;
+}
+
+.logout-button {
+  background-color: #f44336;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth-form {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+  background-image: url('https://www.desnivel.com/images/2015/01/woods-process_davidcliffordphotography7.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  color: #ffffff;
+}
+
+.dark-mode .auth-form {
+  background-color: #2c2c2c;
+}
+
+.dark-mode input {
+  background-color: #3a3a3a;
+  color: #ffffff;
+}
+
+.dark-mode .toggle-password {
+  color: #ffffff;
+}
+
+.dark-mode .auth-button {
+  background-color: #4CAF50;
+}
+
+.dark-mode .auth-button:hover {
+  background-color: #45a049;
+}
+
+/* Boulder panel styles for dark mode */
+.dark-mode .boulder-container {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+.dark-mode .boulder {
+  background-color: #3a3a3a;
+}
+
+.dark-mode .boulder-details {
+  background-color: #2c2c2c;
+}
+
+.dark-mode .grade {
+  color: #b3b3b3;
+}
+
+.dark-mode .location {
+  color: #b3b3b3;
+}
